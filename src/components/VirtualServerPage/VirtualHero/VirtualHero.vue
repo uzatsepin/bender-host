@@ -210,7 +210,6 @@ const email = defineInputBinds('email');
             width: 100%;
         }
     }
-
 }
 
 </style>

@@ -52,14 +52,30 @@ function toggleFaq(event) {
 .DedicatedFaq {
     background: $background_black;
     padding: 160px 0;
+
+    @media screen and (max-width: 1090px) {
+        padding: 100px 0;
+    }
+    @media screen and (max-width: 580px) {
+        padding: 100px 0 0 0;
+    }
     &__container {
         display: flex;
         justify-content: space-between;
         gap: 16px;
+
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+        }
     }
     &__text {
         width: 518px;
         max-width: 518px;
+
+        @media screen and (max-width: 1100px) {
+            width: 100%;
+            max-width: 100%;
+        }
         &-title {
             color: $white;
             font-size: 60px;
@@ -86,6 +102,11 @@ function toggleFaq(event) {
         border-radius: 16px;
         width: 738px;
         max-width: 738px;
+
+        @media screen and (max-width: 1100px) {
+            width: 100%;
+            max-width: 100%;
+        }
 
         &.active & {
             &-top {

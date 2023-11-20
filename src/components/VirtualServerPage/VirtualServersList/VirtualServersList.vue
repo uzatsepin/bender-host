@@ -528,10 +528,6 @@ const isMobile = window.innerWidth < 900
             flex-wrap: wrap;
         }
 
-        //@media screen and (max-width: 670px) {
-        //    flex-wrap: nowrap;
-        //}
-
         &-item {
             padding: 16px;
             background: $stroke_one;

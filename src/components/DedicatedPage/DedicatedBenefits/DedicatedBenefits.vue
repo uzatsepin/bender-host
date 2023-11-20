@@ -94,12 +94,14 @@
         gap: 16px;
         margin-top: 60px;
 
-        //display: flex;
-        //gap: 16px;
-        //width: 100%;
-        //position: relative;
-        //overflow-y: auto;
-        //scroll-behavior: smooth;
+        @media screen and (max-width: 730px) {
+            display: flex;
+            gap: 16px;
+            width: 100%;
+            position: relative;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
 
         &::-webkit-scrollbar {
             display: none;
@@ -116,7 +118,7 @@
         padding: 16px;
         width: 100%;
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 730px) {
             max-width: 280px;
             min-width: 280px;
         }
