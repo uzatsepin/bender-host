@@ -94,13 +94,15 @@
         gap: 16px;
         margin-top: 60px;
 
-        //display: flex;
-        //gap: 16px;
-        //width: 100%;
-        //position: relative;
-        //overflow-y: auto;
-        //scroll-behavior: smooth;
-
+        @media screen and (max-width: 920px) {
+            width: 100%;
+            overflow-y: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
         &::-webkit-scrollbar {
             display: none;
         }
@@ -116,7 +118,7 @@
         padding: 16px;
         width: 100%;
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 920px) {
             max-width: 280px;
             min-width: 280px;
         }

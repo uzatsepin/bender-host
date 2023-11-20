@@ -15,10 +15,24 @@
                         <div class="RentNode__list-item">
                             <div class="RentNode__list-item-name">Number 1</div>
                             <div class="RentNode__list-item-wrapper">
-                                <div class="RentNode__list-item-char">
+                                <div class="RentNode__list-item-char" v-if="!isMobile">
                                     <p>i9 9900k</p>
                                     <p>128 GB RAM</p>
                                     <p>2x1TB NVMe</p>
+                                </div>
+                                <div class="RentNode__list-item-char-mob" v-if="isMobile">
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">Процессор</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">i9 9900K</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">GB RAM</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">128</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">TB NVMe</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">2x1</div>
+                                    </div>
                                 </div>
                                 <div class="RentNode__list-item-price">
                                     <p>
@@ -30,10 +44,24 @@
                         <div class="RentNode__list-item">
                             <div class="RentNode__list-item-name">Number 2</div>
                             <div class="RentNode__list-item-wrapper">
-                                <div class="RentNode__list-item-char">
+                                <div class="RentNode__list-item-char" v-if="!isMobile">
                                     <p>R5 3600</p>
                                     <p>64 GB RAM</p>
                                     <p>2x512GB NVMe</p>
+                                </div>
+                                <div class="RentNode__list-item-char-mob" v-if="isMobile">
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">Процессор</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">R5 3600</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">GB RAM</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">64</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">GB NVMe</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">2x512</div>
+                                    </div>
                                 </div>
                                 <div class="RentNode__list-item-price">
                                     <p>
@@ -45,10 +73,24 @@
                         <div class="RentNode__list-item">
                             <div class="RentNode__list-item-name">Number 3</div>
                             <div class="RentNode__list-item-wrapper">
-                                <div class="RentNode__list-item-char">
+                                <div class="RentNode__list-item-char" v-if="!isMobile">
                                     <p>R7 7700</p>
                                     <p>64 GB RAM</p>
                                     <p>2x1TB NVMe</p>
+                                </div>
+                                <div class="RentNode__list-item-char-mob" v-if="isMobile">
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">Процессор</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">R7 7700</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">GB RAM</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">64</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">TB NVMe</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">2x1TB</div>
+                                    </div>
                                 </div>
                                 <div class="RentNode__list-item-price">
                                     <p>
@@ -60,10 +102,24 @@
                         <div class="RentNode__list-item">
                             <div class="RentNode__list-item-name">Number 4</div>
                             <div class="RentNode__list-item-wrapper">
-                                <div class="RentNode__list-item-char">
+                                <div class="RentNode__list-item-char" v-if="!isMobile">
                                     <p>R9 7950x3d</p>
                                     <p>128GB RAM DDR5</p>
                                     <p>2x2TB NVMe</p>
+                                </div>
+                                <div class="RentNode__list-item-char-mob" v-if="isMobile">
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">Процессор</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">R9 7950x3d</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">GB RAM DDR5</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">128</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">TB NVMe</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">2x2TB</div>
+                                    </div>
                                 </div>
                                 <div class="RentNode__list-item-price">
                                     <p>
@@ -75,10 +131,24 @@
                         <div class="RentNode__list-item">
                             <div class="RentNode__list-item-name">Number 5</div>
                             <div class="RentNode__list-item-wrapper">
-                                <div class="RentNode__list-item-char">
+                                <div class="RentNode__list-item-char" v-if="!isMobile">
                                     <p>R9 5950x</p>
                                     <p>128 GB RAM</p>
                                     <p>2x3.84TB NVMe</p>
+                                </div>
+                                <div class="RentNode__list-item-char-mob" v-if="isMobile">
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">Процессор</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">R9 5950x</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">GB RAM DDR5</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">128</div>
+                                    </div>
+                                    <div class="RentNode__list-item-char-mob-item">
+                                        <div class="RentNode__list-item-char-mob-item-name">TB NVMe</div>
+                                        <div class="RentNode__list-item-char-mob-item-value">3x3.84TB</div>
+                                    </div>
                                 </div>
                                 <div class="RentNode__list-item-price">
                                     <p>
@@ -96,6 +166,7 @@
 
 <script setup>
 
+const isMobile = window.innerWidth < 650;
 
 </script>
 
@@ -179,6 +250,11 @@
         padding: 24px;
         background: $background_dark;
         border-radius: 24px;
+
+        @media screen and (max-width: 1050px) {
+            flex-direction: column;
+            gap: 40px;
+        }
     }
     &__text {
         max-width: 175px;
@@ -204,11 +280,17 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+
         &-item {
             padding: 16px;
             background: $stroke_one;
             border-radius: 16px;
             width: 762px;
+
+            @media screen and (max-width: 1050px) {
+                width: 100%;
+            }
+
 
             &.popular & {
                 &-price {
@@ -263,6 +345,11 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                @media screen and (max-width: 650px) {
+                    flex-direction: column;
+                    align-items: baseline;
+                    gap: 24px;
+                }
             }
             &-char {
                 display: flex;
@@ -272,6 +359,33 @@
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 24px;
+                }
+
+                &-mob {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 8px;
+                    margin-top: 6px;
+                    &-item {
+                        display: flex;
+                        justify-content: space-between;
+                        &-name {
+                            color: $gray;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                        &-value {
+                            color: $white;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            padding: 4px 12px;
+                            background: $background_dark_light;
+                            border-radius: 8px;
+                        }
+                    }
                 }
             }
             &-price {

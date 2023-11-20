@@ -8,11 +8,14 @@
                         <p class="RentHero__descr">Наш сервис предоставляет доступ к аренде оборудования и сетей.</p>
                     </div>
 
-                    <div class="RentHero__button">
+                    <div class="RentHero__button" v-if="!isMobile">
                         <PrimaryButton button-text="Открыть свой хост-сервис" />
                     </div>
                 </div>
                 <div class="RentHero__img">
+                </div>
+                <div class="RentHero__button" v-if="isMobile">
+                    <PrimaryButton button-text="Открыть свой хост-сервис" />
                 </div>
             </div>
         </div>
@@ -25,17 +28,8 @@ import PrimaryButton from "../../Others/PrimaryButton.vue";
 
 import {useForm} from "vee-validate";
 
-function isEmail(value) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-}
+const isMobile = window.innerWidth < 769
 
-const { errors, defineInputBinds } = useForm({
-    validationSchema: {
-        email: (val) => (isEmail(val) ? true : 'Некорректная электронная почта'),
-    },
-});
-
-const email = defineInputBinds('email');
 </script>
 
 <style lang="scss" scoped>
@@ -51,12 +45,24 @@ const email = defineInputBinds('email');
         background: $background-dark;
         border-radius: 24px;
         height: 422px;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            height: auto;
+            padding: 24px 20px;
+            align-items: baseline;
+            gap: 32px;
+        }
     }
     &__text {
         max-width: 593px;
         display: flex;
         flex-direction: column;
         height: 100%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
     &__wrapper {
         flex: 1;
@@ -67,6 +73,10 @@ const email = defineInputBinds('email');
         font-weight: 500;
         line-height: 120%;
         text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+        }
     }
     &__descr {
         margin-top: 4px;
@@ -78,6 +88,10 @@ const email = defineInputBinds('email');
     &__button {
         display: flex;
         gap: 8px;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     &__img {
@@ -89,10 +103,24 @@ const email = defineInputBinds('email');
         background-size: 500px 336px;
         background-repeat: no-repeat;
 
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            border-radius: 50%;
+        }
+        @media screen and (max-width: 430px) {
+            height: 240px;
+        }
+        @media screen and (max-width: 390px) {
+            height: 218px;
+        }
+
     }
     &:deep(.PrimaryButton) {
         width: 263px;
         padding: 14px 24px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 }
 

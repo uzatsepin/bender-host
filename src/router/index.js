@@ -12,6 +12,11 @@ import MyServices from "../views/Panel/MyServices/MyServices.vue";
 import MyServiceItem from "../views/Panel/MyServices/MyServiceItem/MyServiceItem.vue";
 import PanelRent from "../views/Panel/PanelRent.vue";
 import PanelDedicated from "../views/Panel/PanelDedicated.vue";
+import AuthRegister from "../components/Auth/AuthRegister/AuthRegister.vue";
+import AuthRecovery from "../components/Auth/AuthRecovery/AuthRecovery.vue";
+import AuthLogin from "../components/Auth/AuthLogin/AuthLogin.vue";
+import AuthTempPassword from "../components/Auth/AuthTempPassword/AuthTempPassword.vue";
+import AuthRecoveryComplete from "../components/Auth/AuthRecoveryComplete/AuthRecoveryComplete.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,7 +29,7 @@ const router = createRouter({
     {
       path: '/virtual',
       name: 'Virtual',
-      component: VirtualView
+      component: VirtualView,
     },
     {
       path: '/dedicated',

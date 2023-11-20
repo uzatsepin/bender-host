@@ -252,7 +252,12 @@ const isMobile = window.innerWidth < 645;
             text-decoration: none;
             display: block;
             transition: all 250ms ease-in-out;
-            border-radius: 8px;
+            &:first-child {
+                border-radius: 8px 8px 0 0;
+            }
+            &:last-child {
+                border-radius: 0 0 8px 8px;
+            }
 
             &:not(:first-child) {
                 border-top: 1px solid $stroke_one;

@@ -61,20 +61,36 @@ function toggleFaq(event) {
 .RentFaq {
     background: $background_black;
     padding: 100px 0 160px;
+
+    @media screen and (max-width: 768px) {
+        padding: 100px 0;
+    }
     &__container {
         display: flex;
         justify-content: space-between;
         gap: 16px;
+        @media screen and (max-width: 1150px) {
+            flex-direction: column;
+            gap: 24px;
+        }
     }
     &__text {
         width: 518px;
         max-width: 518px;
+        @media screen and (max-width: 1150px) {
+            width: 100%;
+            max-width: 100%;
+        }
         &-title {
             color: $white;
             font-size: 60px;
             font-weight: 500;
             line-height: 120%;
             text-transform: uppercase;
+
+            @media screen and (max-width: 650px) {
+                font-size: 32px;
+            }
         }
         &-descr {
             margin-top: 12px;
@@ -89,12 +105,31 @@ function toggleFaq(event) {
         display: flex;
         flex-direction: column;
         gap: 8px;
+        @media screen and (max-width: 920px) {
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
     }
     &__item {
         background: $background_dark;
         border-radius: 16px;
         width: 738px;
         max-width: 738px;
+
+        @media screen and (max-width: 1150px) {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 920px) {
+            min-width: 280px
+        }
 
         &.active & {
             &-top {
