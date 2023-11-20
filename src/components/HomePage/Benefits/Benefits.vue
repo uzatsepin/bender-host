@@ -8,8 +8,8 @@
             <div class="benefits__wrapper">
                 <div class="benefits__item">
                     <div class="benefits__item-img"></div>
-                    <div class="benefits__item-title">{{ $t('benefits.freeBackups') }}</div>
-                    <div class="benefits__item-descr">{{ $t('benefits.freeBackupsText') }}</div>
+                    <div class="benefits__item-title">{{ $t('benefits.modernEquipment') }}</div>
+                    <div class="benefits__item-descr">{{ $t('benefits.modernEquipmentText') }}</div>
                 </div>
                 <div class="benefits__item">
                     <div class="benefits__item-img support"></div>
@@ -122,7 +122,7 @@
             height: 72px;
             background-color: $background_dark;
             border-radius: 50%;
-            background-image: url("../../../assets/images/benefits/backup.svg");
+            background-image: url("../../../assets/images/benefits/equipment.svg");
             background-size: 32px 32px;
             background-repeat: no-repeat;
             background-position: center;

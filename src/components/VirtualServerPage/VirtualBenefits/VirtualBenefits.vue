@@ -29,11 +29,6 @@
                         <div class="VirtualBenefits__item-title">Простое управление и API</div>
                         <div class="VirtualBenefits__item-descr">Создание и работа с серверами в личном кабинете. Автоматизация управления с помощью REST API и удобной документации</div>
                     </div>
-                    <div class="VirtualBenefits__item">
-                        <div class="VirtualBenefits__item-img backup"></div>
-                        <div class="VirtualBenefits__item-title">Резервное копирование</div>
-                        <div class="VirtualBenefits__item-descr">Будьте спокойны за сохранность своих данных. Резервное копирование доступно в пару кликов и стоит недорого</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -99,12 +94,12 @@
     }
 
     &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 16px;
         margin-top: 60px;
 
-        @media screen and (max-width: 850px) {
+        @media screen and (max-width: 1200px) {
             display: flex;
             flex-wrap: nowrap;
             gap: 16px;
@@ -127,19 +122,14 @@
         background: $background_dark_light;
         border-radius: 16px;
         padding: 16px;
-        width: 32%;
-        @media screen and (max-width: 850px) {
-            width: 100%;
+        width: 100%;
+        @media screen and (max-width: 1200px) {
             min-width: 280px;
         }
 
         @media screen and (max-width: 500px) {
             max-width: 280px;
             min-width: 280px;
-        }
-        &:nth-child(4),
-        &:nth-child(5) {
-            width: 49% ;
         }
 
 

@@ -28,7 +28,9 @@
     "ddos": "Anti-DDoS protection",
     "ddosText": "We are well protected from DDOS attacks, so we continue to work stably even in the face of massive attacks.",
     "payment": "Hourly payment",
-    "paymentText": "You can temporarily rent a server from us for an hour for testing, project demonstration or other purposes."
+    "paymentText": "You can temporarily rent a server from us for an hour for testing, project demonstration or other purposes.",
+    "modernEquipment": "Modern equipment",
+    "modernEquipmentText": "Modern equipment, we are not oversized like other hosting providers."
   },
   "footer": {
     "contact": "Сontacts",

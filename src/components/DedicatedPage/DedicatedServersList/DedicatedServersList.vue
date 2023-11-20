@@ -379,7 +379,7 @@ const isMobile = window.innerWidth < 900
                             background: $background_dark;
                             color: $white;
                             & span {
-                                color: $gray;
+                                color: $gray
                             }
                         }
                     }
