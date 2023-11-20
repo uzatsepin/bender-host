@@ -1,0 +1,48 @@
+@import "./vendors/normalize";
+@import "./vendors/reset";
+@import 'vars';
+
+.container {
+    max-width: 1340px;
+    padding: 0 10px;
+    margin: 0 auto;
+    @media screen and (max-width: 1365px) {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+html {
+    background: #0C0E11;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 4px;
+    margin: 15px;
+    background: transparent;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #3F3F3F;
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #3F3F3F;
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: transparent;
+}

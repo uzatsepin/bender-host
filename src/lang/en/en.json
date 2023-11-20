@@ -1,0 +1,84 @@
+{
+  "header": {
+    "services": "Services",
+    "info": "Information"
+  },
+  "hero": {
+    "title": "Bender premium — best hosting",
+    "priceFrom": "from",
+    "currencyMonth": "USD/month",
+    "currencyHour": "USD/hour",
+    "button": "Find out tariffs VDS/VPS"
+  },
+  "services": {
+    "virtualServers": "Virtual servers",
+    "virtualServersText": "Virtual servers on powerful processors and NVMe SSD drives.",
+    "dedicatedServers": "Dedicated servers",
+    "dedicatedServersText": "Rent of powerful servers in two locations.",
+    "rent": "Rental of equipment and networks",
+    "rentText": "Renting nodes/IPs, assistance in opening your hosting service."
+  },
+  "benefits": {
+    "title": "Why us?",
+    "descr": "We provide next generation hosting provider services. Here are some benefits we can offer.",
+    "freeBackups": "Free backups",
+    "freeBackupsText": "Your data will be reliably protected thanks to free backup to separate servers",
+    "support": "24/7 support",
+    "supportText": "Our 24/7 technical support ensures that our customers can always count on assistance at any time.",
+    "ddos": "Anti-DDoS protection",
+    "ddosText": "We are well protected from DDOS attacks, so we continue to work stably even in the face of massive attacks.",
+    "payment": "Hourly payment",
+    "paymentText": "You can temporarily rent a server from us for an hour for testing, project demonstration or other purposes."
+  },
+  "footer": {
+    "contact": "Сontacts",
+    "referal": "Referral program",
+    "social": "Social",
+    "terms": "Terms of use",
+    "rules": "Rules of use"
+  },
+  "auth" : {
+    "register": "Registration",
+    "authRegisterText": "Enter your email and we will send you a link to create an account.",
+    "authBtn": "Send link",
+    "authHaveAcc": "Already have an account?",
+    "authEnter": "Enter.",
+    "authPolicy": "By creating an account, you agree to",
+    "authAnd": "and",
+    "policy": "privacy policy",
+    "terms": "terms of use",
+    "email": "Email",
+    "invalidEmail": "Invalid email",
+    "password": "Password",
+    "sendLink": "Send Link",
+    "noAcc": "Don't have an account yet?",
+    "recovery": "Recovery",
+    "recoveryText": "Enter the email you specified during registration. We will send her an email to reset her password.",
+    "recoveryComplete": "Password reset",
+    "recoveryCompleteText": "We have sent you a new password to your email.",
+    "continue": "Continue",
+    "letterSend": "Letter sent",
+    "letterSendText": "We have sent an email to {email}, enter the code you received and we will reset your password.",
+    "codeError": "Incorrect code"
+  },
+  "virtual": {
+    "register": "Register",
+    "title": "Virtual servers",
+    "text": "Possibility of using virtual servers on high-performance AMD processors in combination with NVMe SSD drives"
+  },
+  "panelAside" : {
+    "services": "Services",
+    "main": "Main",
+    "myServices": "My services",
+    "finance": "Finance",
+    "referals": "Referals",
+    "settings": "Settings",
+    "virtualServers": "Virtual Servers",
+    "dedicatedServers": "Dedicated Servers",
+    "rentServer": "Rent",
+    "dedicatedTitle": "Your new dedicated server",
+    "virtualTitle": "Your new virtual server",
+    "nameServer": "Name",
+    "locationAndTariff": "Location and tariff"
+  }
+}
