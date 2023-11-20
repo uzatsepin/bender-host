@@ -72,6 +72,10 @@ function toggleFaq(event) {
     @media screen and (max-width: 1090px) {
         padding: 100px 0;
     }
+    @media screen and (max-width: 580px) {
+        padding: 100px 0 0 0;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -84,12 +88,19 @@ function toggleFaq(event) {
     &__text {
         width: 518px;
         max-width: 518px;
+        @media screen and (max-width: 580px) {
+            width: 100%;
+            max-width: 100%;
+        }
         &-title {
             color: $white;
             font-size: 60px;
             font-weight: 500;
             line-height: 120%;
             text-transform: uppercase;
+            @media screen and (max-width: 580px) {
+                font-size: 40px;
+            }
         }
         &-descr {
             margin-top: 12px;

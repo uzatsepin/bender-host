@@ -175,6 +175,10 @@
 <style lang="scss" scoped>
 .VirtualOs {
     margin-top: 160px;
+
+    @media screen and (max-width: 580px) {
+        margin-top: 100px;
+    }
     &__container {
         padding: 40px 0;
         border-top: 1px solid $stroke_one;
@@ -188,6 +192,11 @@
         font-weight: 500;
         line-height: 120%;
         text-transform: uppercase;
+        @media screen and (max-width: 580px) {
+            width: 100%;
+            max-width: 100%;
+            font-size: 32px;
+        }
     }
     &__wrapper {
         display: grid;
@@ -198,12 +207,26 @@
         @media screen and (max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
         }
+        @media screen and (max-width: 580px) {
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     &__item {
         padding: 16px;
         border-radius: 16px;
         border: 1px solid $stroke_one;
         background: $background-dark;
+
+        @media screen and (max-width: 580px) {
+            width: 100%;
+            min-width: 280px;
+        }
         &-img {
             width: 40px;
             height: 40px;

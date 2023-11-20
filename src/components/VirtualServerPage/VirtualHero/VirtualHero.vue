@@ -7,8 +7,7 @@
                         <h1 class="VirtualHero__title">{{ $t('virtual.title') }}</h1>
                         <p class="VirtualHero__descr">{{ $t('virtual.text') }}</p>
                     </div>
-
-                    <div class="VirtualHero__register">
+                    <div class="VirtualHero__register" v-if="!isMobile">
                         <input class="VirtualHero__input"
                                :class="{'error' : errors.email}"
                                v-bind="email"
@@ -22,6 +21,18 @@
                     </div>
                 </div>
                 <div class="VirtualHero__img">
+                </div>
+                <div class="VirtualHero__register" v-if="isMobile">
+                    <input class="VirtualHero__input"
+                           :class="{'error' : errors.email}"
+                           v-bind="email"
+                           type="text"
+                           :placeholder="$t('auth.email')"
+                    >
+
+                    <span class="VirtualHero__register-error">{{ errors.email }}</span>
+
+                    <PrimaryButton :button-text="$t('virtual.register')" />
                 </div>
             </div>
         </div>
@@ -37,6 +48,8 @@ import {useForm} from "vee-validate";
 function isEmail(value) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
+
+const isMobile = window.innerWidth < 580;
 
 const { errors, defineInputBinds } = useForm({
     validationSchema: {
@@ -60,11 +73,24 @@ const email = defineInputBinds('email');
         background: $background-dark;
         border-radius: 24px;
         min-height: 400px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            gap: 32px;
+            align-items: baseline;
+            padding: 24px 20px;
+        }
+        @media screen and (max-width: 580px) {
+            min-height: unset;
+        }
     }
     &__text {
         max-width: 494px;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 580px) {
+            max-width: 100%;
+        }
     }
     &__title {
         color: $white;
@@ -72,6 +98,9 @@ const email = defineInputBinds('email');
         font-weight: 500;
         line-height: 120%;
         text-transform: uppercase;
+        @media screen and (max-width: 580px) {
+            font-size: 32px;
+        }
     }
     &__descr {
         margin-top: 4px;
@@ -85,6 +114,13 @@ const email = defineInputBinds('email');
         gap: 8px;
         margin-top: 86px;
         position: relative;
+
+        @media screen and (max-width: 580px) {
+            flex-direction: column;
+            margin-top: 40px;
+            width: 100%;
+        }
+
         &-error {
             position: absolute;
             top: 45px;
@@ -112,6 +148,11 @@ const email = defineInputBinds('email');
         transition: all 250ms ease-in-out;
         border: 2px solid transparent;
         position: relative;
+
+        @media screen and (max-width: 580px) {
+            width: 100%;
+            min-width: 100%;
+        }
 
         &::placeholder {
             color: $gray;
@@ -151,11 +192,25 @@ const email = defineInputBinds('email');
         background-size: 500px 336px;
         background-repeat: no-repeat;
 
+        @media screen and (max-width: 580px) {
+            width: 100%;
+            background-size: 100%;
+            height: 210px;
+        }
+
+        @media screen and (max-width: 414px) {
+            height: 230px;
+        }
+
     }
     &:deep(.PrimaryButton) {
         width: 214px;
         padding: 14px 24px;
+        @media screen and (max-width: 580px) {
+            width: 100%;
+        }
     }
+
 }
 
 </style>

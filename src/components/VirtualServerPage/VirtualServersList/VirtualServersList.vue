@@ -8,7 +8,7 @@
                         <div class="VirtualServersList__type-item active">Обычные</div>
                         <div class="VirtualServersList__type-item">Абузоустойчивые</div>
                     </div>
-                    <div class="VirtualServersList__title" v-if="isMobile">Выберите локацию сервера</div>
+                    <div class="VirtualServersList__title last" v-if="isMobile">Выберите локацию сервера</div>
                     <div class="VirtualServersList__country">
                         <div class="VirtualServersList__country-item germany active">Германия</div>
                         <div class="VirtualServersList__country-item swiss">Швейцария</div>
@@ -29,10 +29,24 @@
                         <div class="VirtualServersList__list-item">
                             <div class="VirtualServersList__list-item-name">VIEs-1</div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>1 core</p>
                                     <p>2 GB RAM</p>
                                     <p>30 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">1</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">2</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">30</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -47,10 +61,24 @@
                         <div class="VirtualServersList__list-item">
                             <div class="VirtualServersList__list-item-name">VIEs-2</div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>2 core</p>
                                     <p>4 GB RAM</p>
                                     <p>60 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">2</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">4</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">60</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -65,10 +93,24 @@
                         <div class="VirtualServersList__list-item popular">
                             <div class="VirtualServersList__list-item-name">VIEs-3 <span>(Популярное)</span></div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>4 core</p>
                                     <p>8 GB RAM</p>
                                     <p>120 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">4</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">8</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">120</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -83,10 +125,24 @@
                         <div class="VirtualServersList__list-item">
                             <div class="VirtualServersList__list-item-name">VIEs-4</div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>8 core</p>
                                     <p>16 GB RAM</p>
                                     <p>240 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">8</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">16</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">240</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -101,10 +157,24 @@
                         <div class="VirtualServersList__list-item">
                             <div class="VirtualServersList__list-item-name">VIEs-5</div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>16 core</p>
                                     <p>32 GB RAM</p>
                                     <p>480 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">16</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">32</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">480</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -131,10 +201,24 @@
                         <div class="VirtualServersList__list-item">
                             <div class="VirtualServersList__list-item-name">VIEs-1</div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>1 core</p>
                                     <p>2 GB RAM</p>
                                     <p>30 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">1</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">2</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">30</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -149,10 +233,24 @@
                         <div class="VirtualServersList__list-item">
                             <div class="VirtualServersList__list-item-name">VIEs-2</div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>2 core</p>
                                     <p>4 GB RAM</p>
                                     <p>60 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">2</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">4</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">60</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -167,10 +265,24 @@
                         <div class="VirtualServersList__list-item">
                             <div class="VirtualServersList__list-item-name">VIEs-3</div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>4 core</p>
                                     <p>8 GB RAM</p>
                                     <p>120 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">4</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">8</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">120</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -185,10 +297,24 @@
                         <div class="VirtualServersList__list-item popular">
                             <div class="VirtualServersList__list-item-name">VIEs-4 <span>(Популярное)</span></div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>8 core</p>
                                     <p>16 GB RAM</p>
                                     <p>240 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">8</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">16</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">240</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -203,10 +329,24 @@
                         <div class="VirtualServersList__list-item">
                             <div class="VirtualServersList__list-item-name">VIEs-5</div>
                             <div class="VirtualServersList__list-item-wrapper">
-                                <div class="VirtualServersList__list-item-char">
+                                <div class="VirtualServersList__list-item-char" v-if="!isMobile">
                                     <p>16 core</p>
                                     <p>32 GB RAM</p>
                                     <p>480 GB NVMe</p>
+                                </div>
+                                <div class="VirtualServersList__list-item-char-mob" v-if="isMobile">
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">Ядро</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">16</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB RAM</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">32</p>
+                                    </div>
+                                    <div class="VirtualServersList__list-item-char-mob-item">
+                                        <p class="VirtualServersList__list-item-char-mob-item-name">GB NVMe</p>
+                                        <p class="VirtualServersList__list-item-char-mob-item-value">480</p>
+                                    </div>
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
@@ -241,13 +381,33 @@ const isMobile = window.innerWidth < 900
 
         @media screen and (max-width: 900px) {
             flex-direction: column;
-            gap: 24px;
+            gap: 8px;
             align-items: baseline;
+        }
+    }
+    &__title {
+        color: $gray;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &.last {
+            margin-top: 12px;
         }
     }
     &__type {
         display: flex;
         gap: 8px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media screen and (max-width: 900px) {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            width: 100%;
+        }
         &-item {
             padding: 8px 14px;
             border-radius: 40px;
@@ -274,9 +434,14 @@ const isMobile = window.innerWidth < 900
         display: flex;
         gap: 8px;
 
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
         @media screen and (max-width: 900px) {
             overflow-x: auto;
             scroll-behavior: smooth;
+            width: 100%;
         }
         &-item {
             padding: 8px 14px;
@@ -328,6 +493,10 @@ const isMobile = window.innerWidth < 900
         padding: 24px;
         background: $background_dark;
         border-radius: 24px;
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            gap: 32px;
+        }
     }
     &__text {
         max-width: 175px;
@@ -353,6 +522,16 @@ const isMobile = window.innerWidth < 900
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        //@media screen and (max-width: 670px) {
+        //    flex-wrap: nowrap;
+        //}
+
         &-item {
             padding: 16px;
             background: $stroke_one;
@@ -360,6 +539,13 @@ const isMobile = window.innerWidth < 900
             width: 762px;
 
             @media screen and (max-width: 1090px) {
+                width: 100%;
+            }
+            @media screen and (max-width: 900px) {
+                width: 49%;
+            }
+
+            @media screen and (max-width: 670px) {
                 width: 100%;
             }
 
@@ -393,6 +579,11 @@ const isMobile = window.innerWidth < 900
                 @media screen and (max-width: 1090px) {
                     gap: 16px;
                 }
+                @media screen and (max-width: 900px) {
+                    flex-direction: column;
+                    gap: 16px;
+                    align-items: baseline;
+                }
             }
             &-char {
                 display: flex;
@@ -402,6 +593,35 @@ const isMobile = window.innerWidth < 900
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 24px;
+                }
+                &-mob {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    margin-top: 6px;
+
+                    &-item {
+                        display: flex;
+                        justify-content: space-between;
+                        &-name {
+                            color: $gray;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 24px;
+
+                        }
+                        &-value {
+                            color: $white;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            padding: 4px 12px;
+                            border-radius: 40px;
+                            background: $background-dark_light;
+
+                        }
+                    }
                 }
             }
             &-price {
