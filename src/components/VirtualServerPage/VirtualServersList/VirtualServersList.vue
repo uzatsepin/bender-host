@@ -50,10 +50,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 0.9 ₽
+                                        <span>час</span> 0.01 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 391 ₽
+                                        <span>месяц</span> 4.5 $
                                     </p>
                                 </div>
                             </div>
@@ -82,10 +82,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 1.8 ₽
+                                        <span>час</span> 0.02$
                                     </p>
                                     <p>
-                                        <span>месяц</span> 782 ₽
+                                        <span>месяц</span> 9 $
                                     </p>
                                 </div>
                             </div>
@@ -114,10 +114,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 3.59 ₽
+                                        <span>час</span> 0.04 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 1 563 ₽
+                                        <span>месяц</span> 18 $
                                     </p>
                                 </div>
                             </div>
@@ -146,10 +146,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 7.2 ₽
+                                        <span>час</span> 0.08 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 3 126 ₽
+                                        <span>месяц</span> 35 $
                                     </p>
                                 </div>
                             </div>
@@ -178,10 +178,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 14.39 ₽
+                                        <span>час</span> 0.16 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 6 252 ₽
+                                        <span>месяц</span> 72 $
                                     </p>
                                 </div>
                             </div>
@@ -222,10 +222,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 1.13 ₽
+                                        <span>час</span> 0.01 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 559 ₽
+                                        <span>месяц</span> 6 $
                                     </p>
                                 </div>
                             </div>
@@ -254,10 +254,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 2.25 ₽
+                                        <span>час</span> 0.03 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 1 118 ₽
+                                        <span>месяц</span> 13 $
                                     </p>
                                 </div>
                             </div>
@@ -286,10 +286,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 4.52 ₽
+                                        <span>час</span> 0.05 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 2 235 ₽
+                                        <span>месяц</span> 25 $
                                     </p>
                                 </div>
                             </div>
@@ -318,10 +318,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 9 ₽
+                                        <span>час</span> 0.10 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 4 470 ₽
+                                        <span>месяц</span> 50 $
                                     </p>
                                 </div>
                             </div>
@@ -350,10 +350,10 @@
                                 </div>
                                 <div class="VirtualServersList__list-item-price">
                                     <p>
-                                        <span>час</span> 18.02 ₽
+                                        <span>час</span> 0.2 $
                                     </p>
                                     <p>
-                                        <span>месяц</span> 8 941 ₽
+                                        <span>месяц</span> 100 $
                                     </p>
                                 </div>
                             </div>

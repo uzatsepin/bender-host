@@ -6,8 +6,8 @@
   "hero": {
     "title": "Bender premium — лучший хостинг",
     "priceFrom": "От",
-    "currencyMonth": "руб/мес",
-    "currencyHour": "руб/час",
+    "currencyMonth": "$/мес",
+    "currencyHour": "$/час",
     "button": "Узнать тарифы VDS/VPS"
   },
   "services": {

@@ -52,10 +52,10 @@
                                 </div>
                                 <div class="DedicatedServersList__list-item-price">
                                     <p>
-                                        <span>месяц</span> 20 074 ₽
+                                        <span>месяц</span> 220 $
                                     </p>
                                     <p>
-                                        <span v-if="isMobile">установка</span> 1 150 ₽
+                                        <span v-if="isMobile">установка</span> 13 $
                                     </p>
                                 </div>
                             </div>
@@ -90,10 +90,10 @@
                                 </div>
                                 <div class="DedicatedServersList__list-item-price">
                                     <p>
-                                        <span>месяц</span> 13 800 ₽
+                                        <span>месяц</span> 150 $
                                     </p>
                                     <p>
-                                        <span v-if="isMobile">установка</span> 1 150 ₽
+                                        <span v-if="isMobile">установка</span> 13 $
                                     </p>
                                 </div>
                             </div>
@@ -128,10 +128,10 @@
                                 </div>
                                 <div class="DedicatedServersList__list-item-price">
                                     <p>
-                                        <span>месяц</span> 25 466 ₽
+                                        <span>месяц</span> 290 $
                                     </p>
                                     <p>
-                                        <span v-if="isMobile">установка</span> 1 150 ₽
+                                        <span v-if="isMobile">установка</span> 13 $
                                     </p>
                                 </div>
                             </div>
@@ -167,10 +167,10 @@
                                 <div class="DedicatedServersList__list-item-price">
                                     <span class="promo">70 000 ₽ за первый месяц</span>
                                     <p>
-                                        <span>месяц</span> 98 431 ₽
+                                        <span>месяц</span> 1 100 $
                                     </p>
                                     <p>
-                                        <span v-if="isMobile">установка</span> 1 150 ₽
+                                        <span v-if="isMobile">установка</span> 13 $
                                     </p>
                                 </div>
                             </div>
@@ -205,10 +205,10 @@
                                 </div>
                                 <div class="DedicatedServersList__list-item-price">
                                     <p>
-                                        <span>месяц</span> 185 408 ₽
+                                        <span>месяц</span> 2 100 $
                                     </p>
                                     <p>
-                                        <span v-if="isMobile">установка</span> 1 150 ₽
+                                        <span v-if="isMobile">установка</span> 13 $
                                     </p>
                                 </div>
                             </div>

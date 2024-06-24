@@ -4,8 +4,8 @@
             <div class="hero__text">
                 <h1 class="hero__title">{{ $t('hero.title')}}</h1>
                 <div class="hero__price">
-                    <div class="hero__price-item month">{{ $t('hero.priceFrom') }} 280 {{ $t('hero.currencyMonth') }}</div>
-                    <div class="hero__price-item hour">{{ $t('hero.priceFrom') }} 5 {{ $t('hero.currencyMonth') }}</div>
+                    <div class="hero__price-item month">{{ $t('hero.priceFrom') }} 7 {{ $t('hero.currencyMonth') }}</div>
+                    <div class="hero__price-item hour">{{ $t('hero.priceFrom') }} 0.125 {{ $t('hero.currencyMonth') }}</div>
                 </div>
             </div>
             <div class="hero__banner">
